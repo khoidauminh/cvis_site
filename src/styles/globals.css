@@ -70,7 +70,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: left;
-    border: 2px dotted rgb(96 139 168);
 }
 
 .video-bopping {
