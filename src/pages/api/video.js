@@ -38,7 +38,7 @@ export function Video({ index, is_displayed }) {
     );
 }
 
-export default function AllVideos() {
+export function AllVideos() {
     let array = [];
 
     array.push(<Video index={0} is_displayed="block" />);
