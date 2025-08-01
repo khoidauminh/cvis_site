@@ -1,11 +1,6 @@
 :root {
-    --background: linear-gradient(
-        90deg,
-        rgba(45, 6, 48, 1) 0%,
-        rgba(48, 0, 46, 1) 2%,
-        rgba(1, 29, 51, 1) 100%
-    );
-    --foreground: #171717;
+    --background: #0000;
+    --foreground: #ffff;
 }
 
 @media (prefers-color-scheme: dark) {
