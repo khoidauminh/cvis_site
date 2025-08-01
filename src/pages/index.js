@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import { HomeVideo } from "./_app";
+import { AllVideos, NextVideo } from "./video";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { useEffect } from "react";
@@ -17,10 +17,10 @@ const geistMono = Geist_Mono({
 });
 
 export default function Home() {
-    const [seed, setSeed] = useState(1);
-    const handleKeyPress = (event) => {
-        if (event.code === "Space") {
-            setSeed(Math.random());
+    const handleKeyPress = (e) => {
+        if (e.keyCode === 32 && e.target === document.body) {
+            e.preventDefault();
+            NextVideo();
         }
     };
 
@@ -51,8 +51,8 @@ export default function Home() {
                     <div className="row">
                         <div className="column">
                             <div className="column-left">
-                                <div className="video-bopping">
-                                    <HomeVideo key={seed}></HomeVideo>
+                                <div className="video-container">
+                                    <AllVideos></AllVideos>
                                 </div>
                                 <p>Press Space</p>
                             </div>

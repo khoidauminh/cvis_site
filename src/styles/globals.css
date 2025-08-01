@@ -72,7 +72,14 @@ a {
     justify-content: left;
 }
 
-.video-bopping {
+.video-display {
+    display: none;
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     animation: boppingAnimation 5s ease-in-out infinite normal none;
 }
 
