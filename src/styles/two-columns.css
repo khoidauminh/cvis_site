@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+    width: 70rem;
+    height: 30rem;
+}
+
+.column-left {
+    flex: 50%;
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+.column-right {
+    flex: 50%;
+    align-content: center;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
