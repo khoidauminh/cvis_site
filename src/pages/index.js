@@ -49,32 +49,35 @@ export default function Home() {
             >
                 <main className={styles.main}>
                     <div className="row">
-                        <div className="column-left">
-                            <div className="video-bopping">
-                                <HomeVideo key={seed}></HomeVideo>
+                        <div className="column">
+                            <div className="column-left">
+                                <div className="video-bopping">
+                                    <HomeVideo key={seed}></HomeVideo>
+                                </div>
+                                <p>Press Space</p>
                             </div>
-                            <p>Press Space</p>
                         </div>
                         {/* <button onClick={reset}>Click me</button> */}
-                        <div className="column-right">
-                            <h1>A Quirky Music visualizer</h1>
-                            <br></br>
-                            <br></br>
-                            <div className={styles.ctas}>
-                                <a
-                                    className={styles.primary}
-                                    href="https://github.com/khoidauminh/coffeevis_rs?tab=readme-ov-file#installation"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Install (version 0.5.1)
-                                    <Image
-                                        src="/linux_logo_icon_181333.png"
-                                        alt="Linux logo"
-                                        width={40}
-                                        height={40}
-                                    />
-                                </a>
+                        <div className="column">
+                            <div className="column-right">
+                                <h1>A Quirky Music Visualizer</h1>
+                                <br></br>
+                                <br></br>
+
+                                <div className="box">
+                                    <a
+                                        className="download-button"
+                                        href="https://github.com/khoidauminh/coffeevis_rs?tab=readme-ov-file#installation"
+                                    >
+                                        <b>Install (version 0.5.1)</b>
+                                        <Image
+                                            src="/linux_logo_icon_181333.png"
+                                            alt="Linux logo"
+                                            width={40}
+                                            height={40}
+                                        />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

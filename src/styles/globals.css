@@ -53,6 +53,26 @@ a {
     }
 }
 
+.download-button {
+    background: var(--foreground);
+    color: var(--background);
+    border-radius: 3rem;
+    width: max-content;
+    height: max-content;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 2px dotted rgb(96 139 168);
+}
+
 .video-bopping {
     animation: boppingAnimation 5s ease-in-out infinite normal none;
 }
